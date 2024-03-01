@@ -1,0 +1,1 @@
+obj_controller.ontrack_jump_direction = choose(jump_directions.east,jump_directions.north,jump_directions.west,jump_directions.south);
