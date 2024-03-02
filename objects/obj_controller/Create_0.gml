@@ -14,3 +14,9 @@ player_amount_enemies_destroyed = 0;
 player_amount_hungry = 0;
 player_journals_captured = 0;
 player_amount_death = 0;
+
+
+amountjumps_to_Imperiumstation = 50;
+amountjumps_to_merchant = 35;
+amountjumps_to_asteroidbelt = 22;
+amountjumps_to_spacedebries = 10;

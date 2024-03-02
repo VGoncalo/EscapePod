@@ -66,8 +66,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "enemies stuff",
+    "path": "folders/Sprites/enemies stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "enemies content",
+    "path": "folders/Objects/enemies content.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_water_explosion",
-    "path": "sprites/spr_water_explosion/spr_water_explosion.yy",
+    "name": "spr_water_bulletexp",
+    "path": "sprites/spr_water_bulletexp/spr_water_bulletexp.yy",
   },
   "spriteMaskId": null,
   "visible": true,

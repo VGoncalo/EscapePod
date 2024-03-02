@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "pod stuff",
+    "path": "folders/Sprites/pod stuff.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

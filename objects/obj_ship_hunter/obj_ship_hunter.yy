@@ -14,13 +14,10 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "enemies content",
+    "path": "folders/Objects/enemies content.yy",
   },
-  "parentObjectId": {
-    "name": "obj_onradar",
-    "path": "objects/obj_onradar/obj_onradar.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

@@ -1,3 +1,6 @@
+x = obj_scapepod.x;
+y = obj_scapepod.y;
+
 if(ontrack_jumps < 1){
 	if(ontrack_jump_direction = jump_directions.east){
 		ontrack_jump_direction = choose(jump_directions.east,jump_directions.north,jump_directions.south);
@@ -13,3 +16,5 @@ if(ontrack_jumps < 1){
 	}
 	ontrack_jumps = ceil(random_range(2,5));
 }
+
+

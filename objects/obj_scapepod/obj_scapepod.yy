@@ -17,8 +17,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "pod stuff",
+    "path": "folders/Objects/pod stuff.yy",
   },
   "parentObjectId": null,
   "persistent": false,
