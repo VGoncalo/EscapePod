@@ -17,7 +17,7 @@ direction = image_angle;
 
 if speed > 40 pod_navigation_energy -= 0.05;
 if speed > 69 pod_navigation_energy -= 0.1;
-if speed < 30 pod_navigation_energy += 0.02;
+if speed < 30 pod_navigation_energy += 0.04;
 if speed > 75 speed = 75;
 
 

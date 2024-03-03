@@ -1,4 +1,4 @@
-game_state = game_states.ploting;
+game_state = game_states.playing;
 
 ontrack_jump_direction = choose(jump_directions.east,jump_directions.north,jump_directions.west);
 ontrack_jumps = ceil(random_range(2,4));
@@ -14,9 +14,20 @@ player_amount_enemies_destroyed = 0;
 player_amount_hungry = 0;
 player_journals_captured = 0;
 player_amount_death = 0;
+player_ontrack = true;
 
 
 amountjumps_to_Imperiumstation = 50;
 amountjumps_to_merchant = 35;
 amountjumps_to_asteroidbelt = 22;
-amountjumps_to_spacedebries = 10;
+amountjumps_to_spacedebries = 6;
+
+
+alarm[0] = -1;
+hunter_spawner_time = 15;
+
+instance_deactivate_layer("Asteroid_Field");
+instance_deactivate_layer("Asteroid_Field_1");
+instance_deactivate_layer("Asteroid_Field_2");
+instance_deactivate_layer("Asteroid_Field_3");
+instance_deactivate_layer("Asteroid_Field_4");

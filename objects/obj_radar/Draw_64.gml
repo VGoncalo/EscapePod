@@ -33,6 +33,13 @@ with(obj_space_station){
 		draw_circle_color(xx,yy,8,c_blue,c_blue,0);
 	}
 }
+with(obj_poddebris){
+	var xx = _centerx + (x/room_width * _guiwidth) - (obj_scapepod.x/room_width * _guiwidth);
+	var yy = _centery + (y/room_height * _guiheight) - (obj_scapepod.y/room_height * _guiheight);	
+	if(point_in_circle(xx,yy,_centerx,_centery,_radarsize)){
+		draw_circle_color(xx,yy,5,c_lime,c_lime,0);
+	}
+}
 
 // Draw Correct Jump Direction
 if(_jump_correct_direction=jump_directions.east){

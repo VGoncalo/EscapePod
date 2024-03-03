@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_water_bulletexp",
-    "path": "sprites/spr_water_bulletexp/spr_water_bulletexp.yy",
+    "name": "spr_water_explosion",
+    "path": "sprites/spr_water_explosion/spr_water_explosion.yy",
   },
   "spriteMaskId": null,
   "visible": true,

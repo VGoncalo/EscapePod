@@ -1,21 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_planet_bck",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "obj_todelete",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
     "name": "space content",
     "path": "folders/Objects/space content.yy",
   },
-  "parentObjectId": {
-    "name": "obj_todelete",
-    "path": "objects/obj_todelete/obj_todelete.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_planets",
-    "path": "sprites/spr_planets/spr_planets.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
