@@ -1,6 +1,3 @@
-show_debug_message("outside from controller");
-show_debug_message(player_ontrack);
-
 // clear room and build new instances
 layer_destroy_instances("Instances");
 layer_destroy_instances("Instances_Bellow");

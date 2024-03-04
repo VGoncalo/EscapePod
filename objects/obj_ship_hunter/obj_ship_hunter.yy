@@ -17,10 +17,7 @@
     "name": "enemies content",
     "path": "folders/Objects/enemies content.yy",
   },
-  "parentObjectId": {
-    "name": "obj_todelete",
-    "path": "objects/obj_todelete/obj_todelete.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
