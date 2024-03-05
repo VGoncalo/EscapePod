@@ -9,16 +9,23 @@ if(collision_circle(x,y,_radar*2,obj_scapepod,1,1)){
 	move_towards_point(obj_scapepod.x,obj_scapepod.y,_speed);
 	
 	if(_dpod < _radar*1.6){
-		if(alarm[0] = -1){
+		if(alarm[9] = -1){
 			var _water_bullet = instance_create_layer(x,y,"Instances",obj_water_bullet);
 			_water_bullet.direction = direction;
 			_water_bullet.image_angle = direction;
-			alarm[0] = _shoot_timer;
+			alarm[9] = _shoot_timer;
 		}
 	}
 	if(_dpod < _radar or _dpod > _radar*2.5){
 		speed = 0;
 	}
+}
+
+if(collision_circle(x,y,_radar/2,obj_ship_hunter,1,1)){
+	var _x = obj_ship_hunter.x;
+	var _y = obj_ship_hunter.y;
+	
+	move_towards_point(_x,_y,_speed/2);
 }
 
 image_angle = direction;

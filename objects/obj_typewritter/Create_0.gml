@@ -28,9 +28,10 @@ _plot_ph02 = string_replace_all(_plot_ph02, "\\n", "\n");
 _plot_ph03 = "I also have been visited before,\nbut have been able to hold myself together and proceed my research,\nfor more than 8 years I worked on this planet,\nuntil that day...\nthe day they decided to blast the ocean with immense nuclear energy... \nto me...";
 _plot_ph03 = string_replace_all(_plot_ph03, "\\n", "\n");
 _plot_ph04 = "that was an aberration!!";
+_plot_ph05 = "that was an aberration!!";
 
 _text01 = ds_list_create();
-ds_list_add(_text01,_plot_ph01,_plot_ph02,_plot_ph03, _plot_ph04);
+ds_list_add(_text01,_plot_ph01,_plot_ph02,_plot_ph03, _plot_ph04,_plot_ph05);
 //index = 0;
 _amount_paraphs = ds_list_size(_text01)-1;
 _paraph = ds_list_find_value(_text01,i);

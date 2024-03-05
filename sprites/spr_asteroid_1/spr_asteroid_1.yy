@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "space content",
-    "path": "folders/Sprites/space content.yy",
+    "path": "folders/Sprites/decorations/space content.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

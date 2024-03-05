@@ -11,7 +11,6 @@
     {"name":"inst_5EF9E783_1","path":"rooms/rm_zion_spacestation/rm_zion_spacestation.yy",},
     {"name":"inst_49BB0CFE_1","path":"rooms/rm_zion_spacestation/rm_zion_spacestation.yy",},
     {"name":"inst_7C0A7235_1","path":"rooms/rm_zion_spacestation/rm_zion_spacestation.yy",},
-    {"name":"inst_5904FC3E_1","path":"rooms/rm_zion_spacestation/rm_zion_spacestation.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -19,7 +18,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C340C24_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EF9E783_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_radar","path":"objects/obj_radar/obj_radar.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49BB0CFE_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":320.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5904FC3E_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_scapepod","path":"objects/obj_scapepod/obj_scapepod.yy",},"properties":[],"rotation":0.0,"scaleX":0.6666667,"scaleY":0.6666667,"x":5472.0,"y":5440.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_Bellow","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7C0A7235_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_space_station","path":"objects/obj_space_station/obj_space_station.yy",},"properties":[],"rotation":0.0,"scaleX":3.0897956,"scaleY":2.8517182,"x":5279.9995,"y":6912.0,},
