@@ -10,8 +10,8 @@ for(var j=0; j<_i; j++){
 	_yy = lengthdir_y(_rrang,_rdir);
 	//implement 
 	var _s = "water explosion"+string(j);
-	show_debug_message(_s);
-	alarm_set(j,room_speed*random(2));
+	//show_debug_message(_s);
+	alarm_set(j,room_speed*choose(1,2,3));
 	
 }
 

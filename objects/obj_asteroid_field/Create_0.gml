@@ -18,6 +18,8 @@ if(place_free(x,y)){
 	}
 
 	var _have_debris = choose(0,1);
+	show_debug_message("have pod debries?")
+	show_debug_message(_have_debris)
 	var _amount_of_asteroids = array_length(_new_ast_field);
 	for(var i = 0; i <= _amount_of_asteroids-1; i+=1){
 		var ast = layer_instance_get_instance(array_get(_new_ast_field, i));
