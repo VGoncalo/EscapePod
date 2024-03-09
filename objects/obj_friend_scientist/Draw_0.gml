@@ -12,7 +12,6 @@ if(_speak){
 	var _message = ds_list_find_value(_messages,index);
 	var _lenght = string_length(_message);
 	
-	
 	draw_set_color(c_black);
 	draw_rectangle(x-_lenght/3*8,y-152,x+_lenght/2*10,y-88,0);
 	draw_set_color(c_white);

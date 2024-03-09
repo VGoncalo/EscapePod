@@ -16,15 +16,19 @@ if(speed > 50){
 	
 	if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_spacedebries){
 		show_debug_message("go to room spacedebries");
+		//room_goto(4);
 	}	
 	if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_asteroidbelt){
 		show_debug_message("go to room asteroidsbelt");
+		room_goto(4);
 	}	
 	if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_merchant){
 		show_debug_message("go to room boss");
+		//room_goto(5);
 	}	
 	if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_Imperiumstation){
 		show_debug_message("go to room amountjumps_to_Imperiumstation");
+		//room_goto(6);
 	}
 }
 

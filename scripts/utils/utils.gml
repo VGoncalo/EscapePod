@@ -34,6 +34,17 @@ enum journey_stages {
 	imperium_space_station
 }
 
+enum aquaris_states{
+	talk,
+	normal,
+	shrink,
+	big,
+	bullethell,
+	recover,
+	huntercircle,
+	hunterrandom
+}
+
 enum jump_directions{
 	east,
 	north,

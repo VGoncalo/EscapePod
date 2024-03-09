@@ -23,3 +23,5 @@ _speed = 1;
 alarm[0] = _idle_timer;
 _speak = false;
 
+_spawn_scientist = room_speed*choose(3,5,7);
+alarm[3] = _spawn_scientist;

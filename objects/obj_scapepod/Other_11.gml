@@ -31,3 +31,5 @@ if(_shoot_laser && not(_break)){
 		alarm[0] = room_speed*0.5;
 	}
 }
+
+if(speed > 45 && !_front){speed -= 0.5;}

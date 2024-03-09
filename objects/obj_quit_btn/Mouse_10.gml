@@ -1,0 +1,1 @@
+sprite_index = Quit__col_Button;

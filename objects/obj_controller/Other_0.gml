@@ -9,12 +9,12 @@ if(room_get_name(room) == "rm_space"){
 	var _have_asteroids = choose(0,1);
 
 	if(player_ontrack){
-		show_debug_message("Create env")
+		///show_debug_message("Create env")
 		instance_create_layer(room_width/2,room_height/2,"Instances_Planet",obj_planet_bck);
 		if(_have_asteroids=1){instance_create_layer(room_width/2,room_height/2,"Instances",obj_asteroid_field);}
 	}else{
 		// create asteroid fields
-		show_debug_message("create ast field")
+		//show_debug_message("create ast field")
 		instance_create_layer(room_width/2,room_height/2,"Instances",obj_asteroid_field);
 		instance_create_layer(room_width/2,room_height/2,"Instances",obj_asteroid_field);
 		instance_create_layer(room_width/2,room_height/2,"Instances",obj_asteroid_field);

@@ -27,6 +27,9 @@ if(room_get_name(room) == "rm_space"){
 		var _hunter_illusion = instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_portal);
 		alarm[0] = hunter_spawner_time*room_speed;
 	}
-}else if(room_get_name(room) == "rm_space"){
-	// screen shake while whith hero
+}else if(room_get_name(room) == "rm_merchant"){
+	x = obj_scapepod.x;
+	y = obj_scapepod.y;
+	
+	show_debug_message(depth)
 }
