@@ -31,5 +31,5 @@ if(room_get_name(room) == "rm_space"){
 	x = obj_scapepod.x;
 	y = obj_scapepod.y;
 	
-	show_debug_message(depth)
+	//show_debug_message(depth)
 }

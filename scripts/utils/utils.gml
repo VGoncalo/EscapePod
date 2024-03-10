@@ -36,13 +36,12 @@ enum journey_stages {
 
 enum aquaris_states{
 	talk,
-	normal,
-	shrink,
-	big,
-	bullethell,
-	recover,
-	huntercircle,
-	hunterrandom
+	basicshoot,
+	armshoot,
+	idle,
+	packman,
+	dead
+	
 }
 
 enum jump_directions{

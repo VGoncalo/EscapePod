@@ -3,4 +3,4 @@ _damage = 1;
 alarm[0] = _lifespam;
 
 
-speed = 25;
+speed = 45;

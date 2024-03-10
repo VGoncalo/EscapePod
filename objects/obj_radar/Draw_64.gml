@@ -19,6 +19,20 @@ with(obj_ship_hunter){
 		draw_circle_color(xx,yy,4,c_red,c_red,0);
 	}
 }
+with(obj_ship_hunter_I){
+	var xx = _centerx + (x/room_width * _guiwidth) - (obj_scapepod.x/room_width * _guiwidth);
+	var yy = _centery + (y/room_height * _guiheight) - (obj_scapepod.y/room_height * _guiheight);	
+	if(point_in_circle(xx,yy,_centerx,_centery,_radarsize)){
+		draw_circle_color(xx,yy,5,c_red,c_red,0);
+	}
+}
+with(obj_aquaris){
+	var xx = _centerx + (x/room_width * _guiwidth) - (obj_scapepod.x/room_width * _guiwidth);
+	var yy = _centery + (y/room_height * _guiheight) - (obj_scapepod.y/room_height * _guiheight);	
+	if(point_in_circle(xx,yy,_centerx,_centery,_radarsize)){
+		draw_circle_color(xx,yy,8,c_red,c_red,0);
+	}
+}
 with(obj_asteroid){
 	var xx = _centerx + (x/room_width * _guiwidth) - (obj_scapepod.x/room_width * _guiwidth);
 	var yy = _centery + (y/room_height * _guiheight) - (obj_scapepod.y/room_height * _guiheight);	

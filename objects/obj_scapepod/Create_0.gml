@@ -1,3 +1,7 @@
+if !object_exists(obj_controller) instance_create_layer(x,y,"Instances_pod",obj_controller);
+if !object_exists(obj_camera) instance_create_layer(x,y,"Instances_pod",obj_camera);
+if !object_exists(obj_radar) instance_create_layer(x,y,"Instances_pod",obj_radar);
+
 pod_health = 100;
 pod_speed_navigation = 1;
 pod_rotation_speed = 3;

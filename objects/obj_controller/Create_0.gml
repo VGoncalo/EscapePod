@@ -17,7 +17,7 @@ player_amount_death = 0;
 player_ontrack = true;
 
 
-amountjumps_to_Imperiumstation = 30; //final decision
+amountjumps_to_Imperiumstation = 2; //final decision
 amountjumps_to_merchant = 28; //boss
 amountjumps_to_asteroidbelt = 18; //hunter I
 amountjumps_to_spacedebries = 6; //plot builder
