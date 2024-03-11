@@ -8,7 +8,7 @@ enum game_states{
 enum pod_states{
 	idle,
 	free_navigation,
-	tunneling
+	dead
 }
 
 enum pod_items {
@@ -49,6 +49,17 @@ enum jump_directions{
 	north,
 	west,
 	south
+}
+
+enum game_rooms{
+	rm_intro,
+	rm_menu,
+	rm_solarius,
+	rm_space,
+	rm_asteroids_field,
+	rm_merchant,
+	rm_zion_spacestation,
+	rm_gameover
 }
 
 global.hunger_coef = 6;

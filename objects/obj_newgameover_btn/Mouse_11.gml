@@ -1,0 +1,1 @@
+sprite_index = New_game_Button;

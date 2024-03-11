@@ -18,3 +18,8 @@ guiheight = display_get_height();
 
 alarm[0] = -1; // laser timer
 alarm[1] = room_speed*global.hunger_coef; // hunger timer
+alarm[9] = -1;
+
+_talk = false;
+plot_lines = ds_list_create();
+hero_line01 = "";

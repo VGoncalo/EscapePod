@@ -17,8 +17,7 @@ if(room_get_name(room) == "rm_space"){
 		}
 		ontrack_jumps = ceil(random_range(2,5));
 	}
-
-	if(hero_hunger >= 20 and alarm[0]=-1){
+	if(hero_hunger >= 12 and alarm[0]=-1){
 		var _distance_tospawn = point_distance(x,y,x+456,y+356);
 		var _direction_tospawn = random(360);
 		var _x_tospawn = lengthdir_x(_distance_tospawn,_direction_tospawn);
@@ -32,4 +31,14 @@ if(room_get_name(room) == "rm_space"){
 	y = obj_scapepod.y;
 	
 	//show_debug_message(depth)
+}else if(room_get_name(room) == "rm_gameover"){
+	layer_destroy_instances("Instances");
+	layer_destroy_instances("Instances_Bellow");
+	layer_destroy_instances("Instances_Planet");
+	layer_destroy_instances("Asteroid_Field");
+	layer_destroy_instances("Asteroid_Field_1");
+	layer_destroy_instances("Asteroid_Field_2");
+	layer_destroy_instances("Asteroid_Field_3");
+	layer_destroy_instances("Asteroid_Field_4");
+	instance_destroy(obj_scapepod)
 }

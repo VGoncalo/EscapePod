@@ -3,6 +3,7 @@ if(_pod){
 	_poddir = point_direction(x,y,obj_scapepod.x,obj_scapepod.y);
 	_poddist = point_distance(x,y,obj_scapepod.x,obj_scapepod.y);
 }
+if(obj_scapepod.pod_state==pod_states.dead){aquaris_sate = aquaris_states.talk;}
 
 switch(aquaris_sate){
 	case aquaris_states.talk:

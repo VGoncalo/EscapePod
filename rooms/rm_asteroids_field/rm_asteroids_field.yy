@@ -7,10 +7,6 @@
   "inheritCreationOrder": false,
   "inheritLayers": false,
   "instanceCreationOrder": [
-    {"name":"inst_368EBAF3_1","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
-    {"name":"inst_5EF9E783_2","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
-    {"name":"inst_C340C24_2","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
-    {"name":"inst_49BB0CFE_2","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
     {"name":"inst_2A9EC5FB_1","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
     {"name":"inst_4BB8B88B_1","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
     {"name":"inst_38CCC03_1","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
@@ -1047,6 +1043,7 @@
     {"name":"inst_116DF05E","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
     {"name":"inst_8055486","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
     {"name":"inst_5121B03F","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
+    {"name":"inst_16947470","path":"rooms/rm_asteroids_field/rm_asteroids_field.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -2089,10 +2086,7 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instance_pod","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_368EBAF3_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_scapepod","path":"objects/obj_scapepod/obj_scapepod.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":288.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5EF9E783_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_radar","path":"objects/obj_radar/obj_radar.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":160.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C340C24_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":0.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_49BB0CFE_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-160.0,"y":320.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_16947470","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_pod_rmspawn","path":"objects/Obj_pod_rmspawn/Obj_pod_rmspawn.yy",},"properties":[],"rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":352.0,"y":4896.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_Bellow","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20727390","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_poddebris","path":"objects/obj_poddebris/obj_poddebris.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5472.0,"y":6976.0,},

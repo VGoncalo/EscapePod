@@ -1,4 +1,4 @@
-
+if pod_health<=0 pod_state = pod_states.dead
 switch(pod_state){
 	case pod_states.idle:
 		event_user(pod_state);
@@ -8,18 +8,20 @@ switch(pod_state){
 		event_user(pod_state);
 	break;
 	
-	case pod_states.tunneling:
+	case pod_states.dead:
 		event_user(pod_state);
 	break;
 end
 
-direction = image_angle;
+if(pod_state!=pod_states.dead){
+	direction = image_angle;
 
-if speed > 40 pod_navigation_energy -= 0.05;
-if speed > 69 pod_navigation_energy -= 0.1;
-if speed < 30 pod_navigation_energy += 0.04;
-if speed > 75 speed = 75;
+	if speed > 40 pod_navigation_energy -= 0.05;
+	if speed > 69 pod_navigation_energy -= 0.1;
+	if speed < 30 pod_navigation_energy += 0.04;
+	if speed > 75 speed = 75;
 
 
-if(pod_navigation_energy > 100){pod_navigation_energy = 100;}
-if(pod_navigation_energy < 0){pod_navigation_energy = 0;speed = 15}
+	if(pod_navigation_energy > 100){pod_navigation_energy = 100;}
+	if(pod_navigation_energy < 0){pod_navigation_energy = 0;speed = 15}
+}

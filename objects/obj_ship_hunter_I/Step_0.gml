@@ -36,4 +36,4 @@ if(_toeat){
 }
 
 image_angle = direction;
-if _hp <= 0 instance_destroy();
+if _hp <= 0 obj_controller.player_amount_enemies_destroyed++; instance_destroy();

@@ -4,7 +4,7 @@ ontrack_jump_direction = choose(jump_directions.east,jump_directions.north,jump_
 ontrack_jumps = ceil(random_range(2,4));
 
 //Hero Info
-hero_hunger = 18;
+hero_hunger = 1;
 hero_state = hero_states.fine;
 
 //Score
@@ -17,9 +17,9 @@ player_amount_death = 0;
 player_ontrack = true;
 
 
-amountjumps_to_Imperiumstation = 2; //final decision
-amountjumps_to_merchant = 28; //boss
-amountjumps_to_asteroidbelt = 18; //hunter I
+amountjumps_to_Imperiumstation = 26; //final decision
+amountjumps_to_merchant = 24; //boss
+amountjumps_to_asteroidbelt = 15; //hunter I
 amountjumps_to_spacedebries = 6; //plot builder
 
 
