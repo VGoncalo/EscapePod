@@ -57,6 +57,7 @@ enum game_rooms{
 	rm_solarius,
 	rm_space,
 	rm_asteroids_field,
+	rm_space_2,
 	rm_merchant,
 	rm_zion_spacestation,
 	rm_gameover

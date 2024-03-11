@@ -1,4 +1,7 @@
-if(room_get_name(room)=="rm_space" or room_get_name(room)=="rm_merchant" or room_get_name(room)=="rm_asteroids_field"){
+if(room_get_name(room) == room_get_name(game_rooms.rm_space) or
+	room_get_name(room) == room_get_name(game_rooms.rm_merchant) or
+	room_get_name(room) == room_get_name(game_rooms.rm_asteroids_field) or
+	room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 	var _xx = obj_scapepod.x-(display_width/2);
 	var _yy = obj_scapepod.y-(display_height/2);
 
@@ -24,7 +27,7 @@ if(room_get_name(room)=="rm_space" or room_get_name(room)=="rm_merchant" or room
 			}
 		}
 	}
-}else if(room_get_name(room)=="rm_solarius"){
+}else if(room_get_name(room) == room_get_name(game_rooms.rm_solarius)){
 	var _hero = object_exists(obj_hero);
 	if(_hero && !_hero_in_pod){
 		var _xx = obj_hero.x-(display_width/2);

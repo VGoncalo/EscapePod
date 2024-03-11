@@ -6,7 +6,20 @@ if(image_index=25){
 	var _direction_tospawn = random(180);
 	var _x_tospawn = lengthdir_x(_distance_tospawn,_direction_tospawn);
 	var _y_tospawn = lengthdir_y(_distance_tospawn,_direction_tospawn);
+	
 	var _hunter = instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter);
+	if(_hero_hunger > 80){
+		var _hunter = choose(
+			instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter),
+			instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter_I)
+		)
+	}else if(_hero_hunger > 160){
+		var _hunter = choose(
+			instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter),
+			instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter_I),
+			instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_ship_hunter_I),
+		)
+	}
 }else if(image_index>5 and image_index<40){
 	var _asteroidtoeat = collision_circle(x,y,256,obj_asteroid,1,1);
 	if(_asteroidtoeat){

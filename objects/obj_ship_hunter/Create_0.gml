@@ -1,4 +1,4 @@
-_radar = 512;
+_radar = 1024;
 _hp = 1;
 _rotation_speed = 1;
 _shoot_timer = room_speed*3;

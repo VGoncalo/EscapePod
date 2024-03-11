@@ -22,4 +22,10 @@ alarm[9] = -1;
 
 _talk = false;
 plot_lines = ds_list_create();
-hero_line01 = "";
+hero_line01 = "Alright, the ship already calculated the route to Imperial Station,\nI just need to perform jumps into the blue triangle direction";
+hero_line01 = string_replace_all(hero_line01, "\\n", "\n");
+hero_line02 = "Let's get out of here!!";
+hero_line03 = "Oh man, I'm hungry now...";
+hero_line04 = "A journal over there!!";
+hero_line05 = "How come I didn't notice their arrival??";
+ds_list_add(plot_lines,hero_line01,hero_line02,hero_line03,hero_line04);

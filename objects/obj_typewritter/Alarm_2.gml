@@ -6,8 +6,8 @@ if(index < string_length(_paraph)){
 	alarm[2] = room_speed*2;
 }else{
 	i++;
+	if i==1 layer_set_visible("Assets_Planet",true);
 	if(i <_amount_paraphs){
-		if i==1 layer_set_visible("Assets_Planet",true);
 		if i==2 layer_set_visible("Assets_NuclearCannon",true);
 		if i==3 layer_set_visible("Assets_LaserBeam",true);
 		

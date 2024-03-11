@@ -1,1 +1,1 @@
-sprite_index = New_game_Button;
+sprite_index = Play_Button;

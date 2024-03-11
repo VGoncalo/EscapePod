@@ -9,7 +9,7 @@ _mes4 = "  you go ahead, I just\n  need to find my book...";
 _mes4 = string_replace_all(_mes4, "\\n", "\n");
 _mes5 = " the escape pods don't have a lot of space inside,\n so we need to choose wiselly what to take with us";
 _mes5 = string_replace_all(_mes5, "\\n", "\n");
-_mes6 = "I need \nmy book!";
+_mes6 = "I need my\njournal!";
 _mes6 = string_replace_all(_mes6, "\\n", "\n");
 ds_list_add(_messages,_mes1,_mes2,_mes3,_mes4,_mes5,_mes6);
 index = 0;

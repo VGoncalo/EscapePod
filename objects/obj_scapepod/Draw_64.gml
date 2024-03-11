@@ -1,8 +1,6 @@
 var _guiwidth = guiwidth;
 var _guiheight = guiheight;
 
-
-
 draw_set_color(c_white);
 if(object_exists(obj_radar)){
 	draw_text(obj_radar.x-150,obj_radar.y-128,speed);

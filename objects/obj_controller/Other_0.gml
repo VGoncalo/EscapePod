@@ -1,8 +1,16 @@
-if(room_get_name(room) == "rm_space"){
+if(room_get_name(room) == room_get_name(game_rooms.rm_space) or 
+room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 	// clear room and build new instances
 	layer_destroy_instances("Instances");
 	layer_destroy_instances("Instances_Bellow");
 	layer_destroy_instances("Instances_Planet");
+	if(player_ontrack_jumps == amountjumps_to_asteroidbelt+1){
+		layer_destroy_instances("Asteroid_Field");
+		layer_destroy_instances("Asteroid_Field_1");
+		layer_destroy_instances("Asteroid_Field_2");
+		layer_destroy_instances("Asteroid_Field_3");
+		layer_destroy_instances("Asteroid_Field_4");
+	}
 
 	// build env
 	var _have_planet = choose(0,1);

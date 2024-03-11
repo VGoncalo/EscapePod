@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "New_game_Button",
-    "path": "sprites/New_game_Button/New_game_Button.yy",
+    "name": "Play_Button",
+    "path": "sprites/Play_Button/Play_Button.yy",
   },
   "spriteMaskId": null,
   "visible": true,

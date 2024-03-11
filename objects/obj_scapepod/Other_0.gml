@@ -14,13 +14,8 @@ if(speed > 50){
 		obj_controller.player_ontrack = true;
 	}else{obj_controller.player_ontrack = false;}
 	
-	if(room_get_name(room) == "rm_space"){
-		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_spacedebries){
-			//show_debug_message("go to room spacedebries");
-			//room_goto(5);
-		}	
+	if(room_get_name(room) == room_get_name(game_rooms.rm_space) or room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_asteroidbelt){
-			//show_debug_message("go to room asteroidsbelt");
 			room_goto(game_rooms.rm_asteroids_field);
 		}	
 		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_merchant){
@@ -29,12 +24,19 @@ if(speed > 50){
 		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_Imperiumstation){
 			room_goto(game_rooms.rm_zion_spacestation);
 		}
-	}else if(room_get_name(room) == "rm_asteroids_field"){
-		room_goto(game_rooms.rm_space);
 	}
 
 }
-
+if(room_get_name(room) ==room_get_name(game_rooms.rm_asteroids_field)){
+	if(_jump_direction == obj_controller.ontrack_jump_direction){
+		obj_controller.ontrack_jumps -= 1;
+		obj_controller.player_ontrack_jumps += 1;
+		obj_controller.player_ontrack = true;
+		room_goto(game_rooms.rm_space_2);
+	}else{
+		obj_controller.player_ontrack = false;
+	}
+}
 // swap pod
 if(_jump_direction=jump_directions.north){
 	x=room_width/2;

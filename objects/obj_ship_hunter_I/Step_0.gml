@@ -13,8 +13,8 @@ if(collision_circle(x,y,_radar*2,obj_scapepod,1,1)){
 			var _water_bullet = instance_create_layer(x,y,"Instances",obj_water_bullet);
 			_water_bullet.direction = direction;
 			_water_bullet.image_angle = direction;
-			_water_bullet.image_xscale = 1.2;
-			_water_bullet.image_yscale = 1.2;
+			_water_bullet.image_xscale = 0.6;
+			_water_bullet.image_yscale = 0.6;
 			alarm[9] = _shoot_timer;
 		}
 	}
@@ -36,4 +36,7 @@ if(_toeat){
 }
 
 image_angle = direction;
-if _hp <= 0 obj_controller.player_amount_enemies_destroyed++; instance_destroy();
+if(_hp <= 0){
+	obj_controller.player_amount_enemies_destroyed++;
+	instance_destroy();
+}

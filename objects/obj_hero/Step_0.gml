@@ -13,6 +13,9 @@ if(_player_incontrol){
 	}else{speed = 0;}
 }else{
 	if(y=14990){_player_incontrol=true;}
+	if(y=16016){_speak=true;alarm[0] = room_speed*4;index=0;}
+	if(y=15468){_speak=true;alarm[0] = room_speed*4;index=1;}
+	if(y=15055){_speak=true;alarm[0] = room_speed*4;index=2;}
 }
 if(_inpodcontrol){
 	x = obj_pod.x;

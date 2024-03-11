@@ -17,14 +17,14 @@ player_amount_death = 0;
 player_ontrack = true;
 
 
-amountjumps_to_Imperiumstation = 26; //final decision
-amountjumps_to_merchant = 24; //boss
-amountjumps_to_asteroidbelt = 15; //hunter I
-amountjumps_to_spacedebries = 6; //plot builder
+amountjumps_to_Imperiumstation = 15; //final decision
+amountjumps_to_merchant = 13; //boss
+amountjumps_to_asteroidbelt = 10; //hunter I
 
 
 alarm[0] = -1;
 hunter_spawner_time = 15;
+_hunter_treshold = 5;
 _createImprovedHunterI = false;
 
 instance_deactivate_layer("Asteroid_Field");
