@@ -13,7 +13,7 @@ if(_pod){
 		alarm[0]=room_speed;
 	}
 	
-	if(index>=6 && obj_controller._isgameover){
+	if(index>=5 && obj_controller._isgameover){
 		_talk=false;
 		obj_controller._isgameover = false;
 		alarm[1]=room_speed*2;

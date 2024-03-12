@@ -20,6 +20,6 @@ if(_player_incontrol){
 if(_inpodcontrol){
 	x = obj_pod.x;
 	y = obj_pod.y;
-	if(y<1000){_speak=true;alarm[0] = room_speed*4;index=4;}
-	if(!instance_exists(obj_pod)){room_goto(game_rooms.rm_gameover);}
+	if(y<1000){_speak=true;alarm[0] = -1;index=4;}
+	
 }

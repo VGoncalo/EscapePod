@@ -8,8 +8,8 @@ if(_hero_inside && _hero_ready && alarm[0]=-1 && alarm[1]=-1){
 	direction = image_angle;
 	if(_front){
 		motion_add(direction, pod_speed_navigation);
-	
-	}
+		image_index = 3;
+	}else{image_index = 0;}
 	if(_break){
 		motion_add(direction, -pod_speed_navigation*2);
 	}

@@ -56,7 +56,7 @@ with(obj_poddebris){
 }
 
 // Draw Correct Jump Direction
-if(room_get_name(room) != room_get_name(game_rooms.rm_zion_spacestation) ){
+if(room_get_name(room) != room_get_name(game_rooms.rm_zion_spacestation) and room_get_name(room) != room_get_name(game_rooms.rm_solarius)){
 	if(_jump_correct_direction=jump_directions.east){
 		draw_sprite(spr_direction,0,_centerx+_radarsize*0.8-12,_centery);
 	}else if(_jump_correct_direction=jump_directions.north){
