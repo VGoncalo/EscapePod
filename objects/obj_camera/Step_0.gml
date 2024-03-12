@@ -1,7 +1,8 @@
 if(room_get_name(room) == room_get_name(game_rooms.rm_space) or
 	room_get_name(room) == room_get_name(game_rooms.rm_merchant) or
 	room_get_name(room) == room_get_name(game_rooms.rm_asteroids_field) or
-	room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
+	room_get_name(room) == room_get_name(game_rooms.rm_space_2) or
+	room_get_name(room) == room_get_name(game_rooms.rm_zion_spacestation)){
 	var _xx = obj_scapepod.x-(display_width/2);
 	var _yy = obj_scapepod.y-(display_height/2);
 

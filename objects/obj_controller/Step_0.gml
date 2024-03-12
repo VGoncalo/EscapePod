@@ -18,7 +18,7 @@ if(room_get_name(room) == room_get_name(game_rooms.rm_space) or room_get_name(ro
 		}
 		ontrack_jumps = ceil(random_range(2,5));
 	}
-	if(hero_hunger >= _hunter_treshold and alarm[0]=-1){
+	if(hero_hunger >= _hunter_treshold and alarm[0]=-1 and obj_scapepod.pod_state!=pod_states.idle){
 		var _distance_tospawn = point_distance(x,y,x+456,y+356);
 		var _direction_tospawn = random(360);
 		var _x_tospawn = lengthdir_x(_distance_tospawn,_direction_tospawn);
@@ -26,8 +26,8 @@ if(room_get_name(room) == room_get_name(game_rooms.rm_space) or room_get_name(ro
 		//show_debug_message("spawn portal")
 		var _hunter_illusion = instance_create_layer(x+_x_tospawn,y+_y_tospawn,"Instances",obj_portal);
 		alarm[0] = hunter_spawner_time*room_speed;
-		if(room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
-			var _i = random_range(1,3);
+		if(room_get_name(room) == room_get_name(game_rooms.rm_space_2) or hero_hunger>15){
+			var _i = random_range(0,2);
 			for(var j=0; j<=_i;j++){
 				var _distance_tospawn_m = point_distance(x,y,x+512,y+512);
 				var _direction_tospawn_m = random(360);

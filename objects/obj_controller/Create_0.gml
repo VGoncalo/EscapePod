@@ -15,16 +15,16 @@ player_amount_hungry = 0;
 player_journals_captured = 0;
 player_amount_death = 0;
 player_ontrack = true;
+_isgameover = true;
 
-
-amountjumps_to_Imperiumstation = 15; //final decision
-amountjumps_to_merchant = 13; //boss
-amountjumps_to_asteroidbelt = 10; //hunter I
+amountjumps_to_Imperiumstation = 13; //final decision
+amountjumps_to_merchant = 12; //boss
+amountjumps_to_asteroidbelt = 8; //hunter I
 
 
 alarm[0] = -1;
-hunter_spawner_time = 15;
-_hunter_treshold = 5;
+hunter_spawner_time = 12;
+_hunter_treshold = 3;
 _createImprovedHunterI = false;
 
 instance_deactivate_layer("Asteroid_Field");

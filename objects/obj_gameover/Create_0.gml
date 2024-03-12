@@ -1,4 +1,11 @@
-_gameover = "Game Over"
+if(obj_controller._isgameover){
+	_gameover = "Game Over";
+}else{
+	_gameover = "Thanks for playing!!"
+}
+
+
+
 _gameoverx = 325;
 _gameovery = 125;
 

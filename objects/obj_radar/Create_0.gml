@@ -5,3 +5,5 @@ x = guiwidth*0.90;
 y = guiheight*0.72;
 
 radarsize = 150;
+
+alarm[0] = -1;

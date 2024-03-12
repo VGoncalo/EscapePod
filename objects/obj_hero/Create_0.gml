@@ -7,12 +7,16 @@ _speed = 3;
 
 _speak = false;
 hero_lines = ds_list_create();
-heroline01 = "I need to get out of here!!";
+heroline01 = "I need to get\nout of here!!";
+heroline01 = string_replace_all(heroline01, "\\n", "\n");
 heroline02 = "I just need to reach the\nnearby Imperial Space Station";
 heroline02 = string_replace_all(heroline02, "\\n", "\n");
-heroline03 = "Here is my pod";
-heroline04 = "Alrigh the radar just computed\n the shortest route!";
+heroline03 = "Here is\nmy pod!";
+heroline03 = string_replace_all(heroline03, "\\n", "\n");
+heroline04 = "Alrigh the radar just \ncomputed the shortest route";
 heroline04 = string_replace_all(heroline04, "\\n", "\n");
-heroline05 = "Here I go!!"
+heroline05 = "Just follow the\nblue triangle!!";
+heroline05 = string_replace_all(heroline05, "\\n", "\n");
 ds_list_add(hero_lines,heroline01,heroline02,heroline03,heroline04,heroline05);
 index = 0;
+_speakline04 = false;

@@ -1,3 +1,4 @@
+randomize();
 if(room_get_name(room) == room_get_name(game_rooms.rm_space) or 
 room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 	// clear room and build new instances
@@ -11,6 +12,7 @@ room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 		layer_destroy_instances("Asteroid_Field_3");
 		layer_destroy_instances("Asteroid_Field_4");
 	}
+	if(instance_exists(obj_aquaris_idle)){instance_destroy(obj_aquaris_idle);}
 
 	// build env
 	var _have_planet = choose(0,1);

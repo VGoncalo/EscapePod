@@ -4,9 +4,9 @@ if(room_get_name(room) == room_get_name(game_rooms.rm_asteroids_field)){
 		y = Obj_pod_rmspawn.y;
 		direction = Obj_pod_rmspawn.direction;
 	}
-	speed = 1;
-	//display message to player
-	
+	pod_state = pod_states.idle;
+	index = 3;
+	_talk = true;
 }else if(room_get_name(room) == room_get_name(game_rooms.rm_space_2)){
 	layer_add_instance("Instance_pod",id);
 	speed = 1;
@@ -17,12 +17,6 @@ if(room_get_name(room) == room_get_name(game_rooms.rm_asteroids_field)){
 		direction = Obj_pod_rmspawn.direction;
 	}
 	speed = 1;
-	
-	if(object_exists(obj_aquaris)){
-		var _aquarisx = obj_aquaris.x;
-		var _aquarisy = obj_aquaris.y;
-		var _dst_to_aqu = distance_to_object(obj_aquaris);
-	}
 }else if(room_get_name(room) ==  room_get_name(game_rooms.rm_gameover)){
 	with(obj_camera){instance_destroy();}
 	with(obj_radar){instance_destroy();}

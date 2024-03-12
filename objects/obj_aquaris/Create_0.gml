@@ -6,7 +6,7 @@ aquaris_sate = aquaris_states.talk;
 aquaris_previous_sate = aquaris_states.talk;
 _aquaris_idle_timer = room_speed*2;
 
-_hp = 10;
+_hp = 25;
 _sp = 2;
 
 

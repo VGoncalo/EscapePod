@@ -13,11 +13,13 @@ if(_player_incontrol){
 	}else{speed = 0;}
 }else{
 	if(y=14990){_player_incontrol=true;}
-	if(y=16016){_speak=true;alarm[0] = room_speed*4;index=0;}
-	if(y=15468){_speak=true;alarm[0] = room_speed*4;index=1;}
-	if(y=15055){_speak=true;alarm[0] = room_speed*4;index=2;}
+	if(y=16076){_speak=true;alarm[0] = room_speed*4;index=0;}
+	if(y=15498){_speak=true;alarm[0] = room_speed*4;index=1;}
+	if(y=15085){_speak=true;alarm[0] = room_speed*4;index=2;}
 }
 if(_inpodcontrol){
 	x = obj_pod.x;
 	y = obj_pod.y;
+	if(y<1000){_speak=true;alarm[0] = room_speed*4;index=4;}
+	if(!instance_exists(obj_pod)){room_goto(game_rooms.rm_gameover);}
 }

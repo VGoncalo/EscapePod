@@ -21,6 +21,9 @@ if(collision_circle(x,y,_radar*2,obj_scapepod,1,1)){
 	if(_dpod < _radar or _dpod > _radar*2.5){
 		speed = 0;
 	}
+	if(!audio_is_playing(sd_alien_talk_2)){
+		audio_play_sound(sd_alien_talk_2,0,false);
+	}
 }
 var _toeat = collision_circle(x,y,_radar/2,obj_ship_hunter,1,1);
 if(_toeat){

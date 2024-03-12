@@ -14,21 +14,31 @@ if(_speak){
 	
 	if(index==0){
 		draw_set_color(c_black);
-		draw_rectangle(x-_lenght*12,y-152,x-64,y-88,0);
-		draw_set_colr(c_white);
-		draw_text(x-_lenght*12+8,y-148,_message);
+		draw_rectangle(x-_lenght*12,y-152,x-128,y-88,0);
+		draw_set_color(c_white);
+		draw_text(x-_lenght*12+8,y-150,_message);
 	}else if(index==1){
 		draw_set_color(c_black);
-		draw_rectangle(x+64,y-152,x+_lenght*12,y-88,0);
+		draw_rectangle(x+192,y-152,x+_lenght*12,y-88,0);
 		draw_set_color(c_white);
-		draw_text(x+72,y-148,_message);
-	}else{
+		draw_text(x+200,y-150,_message);
+	}else if(index==2){
 		draw_set_color(c_black);
-		draw_rectangle(x-_lenght*12,y-128,x-32,y-88,0);
+		draw_rectangle(x-_lenght*10,y-152,x-32,y-80,0);
 		draw_set_color(c_white);
-		draw_text(x-_lenght*12+8,y-120,_message);
+		draw_text(x-_lenght*10+8,y-150,_message);
+	}else if(index==4){
+		draw_set_color(c_black);
+		draw_rectangle(x+192,y-152,x+_lenght*12,y-88,0);
+		draw_set_color(c_white);
+		draw_text(x+200,y-150,_message);
 	}
-	//if index <= 4 draw_sprite(spr_interact_btn,0,x+_lenght/2*10+8,y-88);
+	if(index==3 && _speakline04){
+		draw_set_color(c_black);
+		draw_rectangle(x+192,y-152,x+_lenght*12,y-88,0);
+		draw_set_color(c_white);
+		draw_text(x+200,y-150,_message);
+	}
 }
 
 draw_self();

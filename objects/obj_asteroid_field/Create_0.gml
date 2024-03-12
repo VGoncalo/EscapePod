@@ -1,3 +1,4 @@
+randomize();
 if(place_free(x,y)){
 
 	var _place = choose("center","q1","q2","q3","q4");
@@ -17,7 +18,7 @@ if(place_free(x,y)){
 		var _new_ast_field = layer_get_all_elements("Asteroid_Field_4");
 	}
 
-	var _have_debris = choose(0,1,1);
+	var _have_debris = choose(0,1);
 	//show_debug_message("have pod debries?")
 	//show_debug_message(_have_debris)
 	var _amount_of_asteroids = array_length(_new_ast_field);
@@ -30,13 +31,6 @@ if(place_free(x,y)){
 		if(i=_amount_of_asteroids/2 and _have_debris){
 			instance_create_layer(xx+64,yy+64,"Instances_Bellow",obj_poddebris);
 		}
-		var _anotherone = choose(0,1);
-		if(i=_amount_of_asteroids and _anotherone){
-			instance_create_layer(xx+64,yy+64,"Instances_Bellow",obj_poddebris);
-		}
-		var _anotheronefront = choose(0,1);
-		if(i=0 and _anotheronefront){
-			instance_create_layer(xx+64,yy+64,"Instances_Bellow",obj_poddebris);
-		}
+		
 	}
 }

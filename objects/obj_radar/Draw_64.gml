@@ -56,12 +56,14 @@ with(obj_poddebris){
 }
 
 // Draw Correct Jump Direction
-if(_jump_correct_direction=jump_directions.east){
-	draw_sprite(spr_direction,0,_centerx+_radarsize*0.8-12,_centery);
-}else if(_jump_correct_direction=jump_directions.north){
-	draw_sprite(spr_direction,1,_centerx,_centery-_radarsize*0.8+12);
-}else if(_jump_correct_direction=jump_directions.west){
-	draw_sprite(spr_direction,2,_centerx-_radarsize*0.8+12,_centery);
-}else if(_jump_correct_direction=jump_directions.south){
-	draw_sprite(spr_direction,3,_centerx,_centery+_radarsize*0.8-12);
+if(room_get_name(room) != room_get_name(game_rooms.rm_zion_spacestation) ){
+	if(_jump_correct_direction=jump_directions.east){
+		draw_sprite(spr_direction,0,_centerx+_radarsize*0.8-12,_centery);
+	}else if(_jump_correct_direction=jump_directions.north){
+		draw_sprite(spr_direction,1,_centerx,_centery-_radarsize*0.8+12);
+	}else if(_jump_correct_direction=jump_directions.west){
+		draw_sprite(spr_direction,2,_centerx-_radarsize*0.8+12,_centery);
+	}else if(_jump_correct_direction=jump_directions.south){
+		draw_sprite(spr_direction,3,_centerx,_centery+_radarsize*0.8-12);
+	}
 }

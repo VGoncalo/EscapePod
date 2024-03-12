@@ -21,11 +21,15 @@ alarm[1] = room_speed*global.hunger_coef; // hunger timer
 alarm[9] = -1;
 
 _talk = false;
+_talkJumpInfo = true;
+index=0;
 plot_lines = ds_list_create();
-hero_line01 = "Alright, the ship already calculated the route to Imperial Station,\nI just need to perform jumps into the blue triangle direction";
+hero_line01 = "The PurpulsionJumpTechnolog works when\nthe pod surpasses the 50 half/lightspeed";
 hero_line01 = string_replace_all(hero_line01, "\\n", "\n");
-hero_line02 = "Let's get out of here!!";
-hero_line03 = "Oh man, I'm hungry now...";
-hero_line04 = "A journal over there!!";
+hero_line02 = "I just need to travel at that speed for\na few seconds to make the pod 'jump'";
+hero_line02 = string_replace_all(hero_line02, "\\n", "\n");
+hero_line03 = "Lets GO0oo!!";
+hero_line04 = "I'm glad I slowed down!! There are \nso many asteroids ahead!";
+hero_line04 = string_replace_all(hero_line04, "\\n", "\n");
 hero_line05 = "How come I didn't notice their arrival??";
 ds_list_add(plot_lines,hero_line01,hero_line02,hero_line03,hero_line04);

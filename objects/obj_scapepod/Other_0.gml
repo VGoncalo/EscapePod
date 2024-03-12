@@ -21,7 +21,8 @@ if(speed > 50){
 		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_merchant){
 			room_goto(game_rooms.rm_merchant);
 		}	
-		if(obj_controller.player_ontrack_jumps == obj_controller.amountjumps_to_Imperiumstation){
+		if(obj_controller.player_ontrack_jumps >= obj_controller.amountjumps_to_Imperiumstation){
+			show_debug_message("go to zion room");
 			room_goto(game_rooms.rm_zion_spacestation);
 		}
 	}
@@ -35,6 +36,18 @@ if(room_get_name(room) ==room_get_name(game_rooms.rm_asteroids_field)){
 		room_goto(game_rooms.rm_space_2);
 	}else{
 		obj_controller.player_ontrack = false;
+	}
+}
+if(room_get_name(room) ==room_get_name(game_rooms.rm_merchant)){
+	if(instance_exists(obj_aquaris)){
+		if(obj_aquaris.aquaris_sate==aquaris_states.dead){
+			if(_jump_direction == obj_controller.ontrack_jump_direction){
+				obj_controller.ontrack_jumps -= 1;
+				obj_controller.player_ontrack_jumps += 1;
+				obj_controller.player_ontrack = true;
+				room_goto(game_rooms.rm_zion_spacestation);
+			}else{obj_controller.player_ontrack = false;}
+		}else{obj_controller.player_ontrack = false;}
 	}
 }
 // swap pod

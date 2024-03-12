@@ -27,7 +27,7 @@ if(_shoot_laser && not(_break)){
 		var _left_laser = instance_create_layer(x,y,"Instances",obj_laser_bullet);
 		_left_laser.direction = direction;
 		_left_laser.image_angle = direction;
-		
+		audio_play_sound(sd_laser,0,false);
 		alarm[0] = room_speed*0.5;
 	}
 }
