@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sd_alien_talk_2.wav",
   "type": 0,
-  "volume": 0.8,
+  "volume": 0.65,
 }
